@@ -4,11 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="./sprites/taku-logo.png" type="image/x-icon" />
         <title>Otakulandia</title>
     </head>
     <body>
         <nav>
-            <img src="#" alt="" class="logo" />
+            <img
+                src="/sprites/taku-logo.png"
+                alt="logo de otakulandia"
+                class="logo"
+            />
             <ul>
                 <li><a href="#">Blog</a></li>
                 <li>|</li>
@@ -17,11 +22,16 @@
         </nav>
         <header>
             <div class="titleContainer">
-                <h1>Otakulandia:Resumenes y mas</h1>
+                <img
+                    src="/sprites/taku-logo.png"
+                    alt="logo de otakulandia"
+                    class="logo"
+                />
+                <h2>Resumenes y mas</h2>
             </div>
         </header>
         <main class="container">
-            <section class="suscribtion">
+            <section class="sub">
                 <article>
                     <h2>Suscribete a Nuestra Newsletter</h2>
                     <p>
@@ -44,21 +54,21 @@
                         <h3>
                             <b>suscribete a nuestra <i>newsletter</i></b>
                         </h3>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" />
-
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="email" />
+                        <div class="entrada">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" />
+                        </div>
+                        <div class="entrada">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" />
+                        </div>
                         <p>
                             INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE
                             <b>otakulandia</b>
                         </p>
                         <div class="checkbox">
-                            <input
-                                type="checkbox"
-                                name="politica"
-                                id=""
-                            /><label for="politica"
+                            <input type="checkbox" name="politica" /><label
+                                for="politica"
                                 >He leido y aceptado la politica de
                                 privacidad</label
                             >
