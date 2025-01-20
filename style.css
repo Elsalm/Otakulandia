@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #ff5055;
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #1c2b54;
+    padding: 1rem 2vw;
+}
+.logo {
+    width: 30vw;
+    object-fit: contain;
+}
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+header {
+    background-image: url(./sprites/onepice-header.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    padding: 0.7rem;
+}
+
+.titleContainer h2 {
+    margin: 0;
+}
+.titleContainer {
+    color: #ff5055;
+}
+
+.titleContainer .logo {
+    width: 35vw;
+    object-fit: contain;
+    text-align: center;
+}
+main img {
+    width: 70vw;
+    margin: 0 auto;
+}
+.sub {
+    background-color: #377292;
+    padding: 3%;
+}
+.entrada {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.entrada input {
+    border-radius: 2px;
+    border: 1px solid rgb(181, 189, 196);
+    font-size: 3vw;
+    height: 8vw;
+    padding: 7px 7px;
+    color: rgb(8, 9, 10);
+}
+.entrada input:focus {
+    background-color: #fff;
+    border-color: #3b49df;
+    box-shadow: 1px 1px 0 #3b49df;
+}
+button {
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.cards {
+    background-color: #d58083;
+    padding: 1rem 0;
+}
+
+.card-resumen {
+    margin: 1rem 0.7rem;
+}
+
+.card-resumen img {
+    width: 90vw;
+}
+
+.card-resumen h4,
+.card-resumen p {
+    margin: 0.5rem 0;
+}
+footer {
+    padding: 1rem;
+    background-color: #1c2b54;
+    display: flex;
+    gap: 0.5rem;
+    flex-flow: column wrap;
+    align-items: center;
+}
+footer .footer-info {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.redes {
+    display: flex;
+    gap: 1rem;
+}
+.redes img {
+    width: 6vw;
+}
+.pipe {
+    display: none;
+}
+footer ul {
+    list-style: none;
+    text-align: center;
+}
