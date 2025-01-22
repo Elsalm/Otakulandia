@@ -1,6 +1,5 @@
 * {
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
@@ -33,14 +32,20 @@ header {
     background-image: url(./sprites/onepice-header.png);
     background-repeat: no-repeat;
     background-size: 100vw;
-    padding: 0.7rem;
+    height: 15vh;
+    position: relative;
+    z-index: 1;
 }
 
 .titleContainer h2 {
     margin: 0;
 }
 .titleContainer {
+    position: absolute;
     color: #ff5055;
+    z-index: 2;
+    top: 15%;
+    left: 13%;
 }
 
 .titleContainer .logo {
@@ -64,7 +69,6 @@ main img {
 .entrada input {
     border-radius: 2px;
     border: 1px solid rgb(181, 189, 196);
-    font-size: 3vw;
     height: 8vw;
     padding: 7px 7px;
     color: rgb(8, 9, 10);
@@ -106,9 +110,13 @@ button:hover {
 }
 
 .card-resumen {
-    margin: 1rem 0.7rem;
+    padding: 0 0.5rem;
+    margin: 3rem 0.7rem;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
 .card-resumen img {
     width: 90vw;
 }
@@ -143,4 +151,92 @@ footer .footer-info {
 footer ul {
     list-style: none;
     text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .logo {
+        width: 20vw;
+    }
+    header {
+        height: 19vh;
+    }
+    .entrada input {
+        height: 3.5vw;
+    }
+    .card-resumen {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
+    .card-resumen img {
+        width: 17vw;
+        transform: rotate(-7deg);
+    }
+    .reverse img {
+        transform: rotate(7deg);
+    }
+    .redes img {
+        width: 4vw;
+    }
+}
+@media (min-width: 993px) {
+    .logo {
+        width: 10vw;
+    }
+    header {
+        height: 50vh;
+    }
+    .titleContainer {
+        margin-top: 5%;
+        margin-left: 4%;
+    }
+    .titleContainer .logo {
+        width: 20vw;
+    }
+    .card-resumen {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 15vw;
+    }
+    .card-resumen img {
+        width: 10vw;
+        transform: rotate(-7deg);
+    }
+    .reverse img {
+        transform: rotate(7deg);
+    }
+    .sub {
+        padding: 3% 15vw;
+    }
+    .entrada input {
+        height: 2vw;
+    }
+    button {
+        font-size: 1.1rem;
+    }
+    footer {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .pipe {
+        display: block;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+    .redes {
+        justify-content: flex-end;
+    }
+    .redes img {
+        width: 2vw;
+    }
+    footer ul {
+        display: flex;
+        gap: 1rem;
+    }
 }
