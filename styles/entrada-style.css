@@ -74,6 +74,9 @@ main {
     }
 }
 @media (min-width: 993px) {
+    main {
+        padding: 1 10rem;
+    }
     .wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
