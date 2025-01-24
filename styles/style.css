@@ -1,7 +1,7 @@
 header {
-    background-image: url(./sprites/onepice-header.png);
+    background-image: url(/sprites/onepice-header.png);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100% 100%;
     height: 15vh;
     position: relative;
     z-index: 1;
@@ -39,8 +39,8 @@ main img {
 .entrada input {
     border-radius: 2px;
     border: 1px solid rgb(181, 189, 196);
-    height: 8vw;
-    padding: 7px 7px;
+    height: 1.5rem;
+    padding: 0.5rem;
     color: rgb(8, 9, 10);
 }
 .entrada input:focus {
@@ -59,7 +59,7 @@ button {
     text-align: center;
     border: 1px solid transparent;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 0.25rem;
     transition:
         color 0.15s ease-in-out,
