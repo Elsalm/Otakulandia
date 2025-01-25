@@ -11,19 +11,23 @@
         <title>Videos | otakulandia</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4">
+        <nav class="navbar navbar-expand bg-dark navbar-dark mb-4 px-1">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
                     <img
                         src="/sprites/taku-logo.png"
                         alt="Avatar Logo"
-                        style="width: 10vw"
+                        style="width: 20vh"
                     />
                 </a>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="/index.html">Home</a>
                     </li>
+                    <li class="nav-item text-secondary">
+                        <span>|</span>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/src/blog.html">Blog</a>
                     </li>
@@ -31,10 +35,10 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container-fluid my-5">
             <h1 class="fw-bold">Videos de Openings de animes</h1>
-            <div class="videos">
-                <div class="card mb-4">
+            <div class="videos row gap-2 justify-content-center">
+                <div class="card mb-4 col-lg-3 col-md-5">
                     <div class="video-item mb-4 card-img-top">
                         <iframe
                             width="100%"
@@ -59,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4 col-lg-3 col-md-5">
                     <div class="video-item mb-4 card-img-top">
                         <iframe
                             width="100%"
@@ -84,7 +88,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4 col-lg-3 col-md-5">
                     <div class="video-item mb-4 card-img-top">
                         <iframe
                             width="100%"
@@ -110,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4 col-lg-3 col-md-5">
                     <div class="video-item mb-4 card-img-top">
                         <iframe
                             width="100%"
@@ -135,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4 col-lg-3 col-md-5">
                     <div class="video-item mb-4 card-img-top">
                         <iframe
                             width="100%"
@@ -161,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4 col-lg-3 col-md-5">
                     <div class="video-item mb-4 card-img-top">
                         <iframe
                             width="100%"
@@ -187,5 +191,61 @@
                 </div>
             </div>
         </div>
+        <footer class="bg-dark d-flex flex-lg-row justify-content-between">
+            <div class="d-flex flex-column">
+                <a href="/index.html"
+                    ><img
+                        src="/sprites/taku-logo.png"
+                        alt="logo otakulandia"
+                        style="width: 15vh"
+                /></a>
+                <span class="text-secondary">2025-2026|Simon Lionello</span>
+            </div>
+
+            <div class="d-flex flex-column">
+                <ul class="d-flex flex-row p-0 gap-2 justify-content-end gap-1">
+                    <li>
+                        <img
+                            src="/sprites/twitter.png"
+                            alt="logo twitter"
+                            style="width: 4vh"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/sprites/logotipo-de-instagram.png"
+                            alt="logo intagram"
+                            style="width: 4vh"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="/sprites/youtube.png"
+                            alt="logo youtube"
+                            style="width: 4vh"
+                        />
+                    </li>
+                </ul>
+                <ul class="p-0 text-secondary">
+                    <li>
+                        <a href="" class="link-secondary text-decoration-none"
+                            >Política de privacidad</a
+                        >
+                    </li>
+                    <li class="pipe">|</li>
+                    <li>
+                        <a class="link-secondary text-decoration-none"
+                            >Politica de cookies</a
+                        >
+                    </li>
+                    <li class="pipe">|</li>
+                    <li>
+                        <a class="link-secondary text-decoration-none"
+                            >Aviso legal</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
