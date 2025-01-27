@@ -1,0 +1,10 @@
+$orange: #ff5055;
+$tf: #1c2b54;
+$custom-colors: (
+    "orange": $orange,
+    "tf": $tf,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
