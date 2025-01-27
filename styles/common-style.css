@@ -16,7 +16,7 @@ nav.top {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: #1c2b54;
+    background-color: #212529;
     padding: 1rem 2vw;
 }
 .logo {
@@ -33,7 +33,7 @@ nav ul {
 
 footer {
     padding: 1rem;
-    background-color: #1c2b54;
+    background-color: #212529;
     display: flex;
     gap: 0.5rem;
     flex-flow: column wrap;
@@ -51,6 +51,9 @@ footer .footer-info {
 }
 .redes img {
     width: 6vw;
+}
+.color-pipe {
+    color: #ff5055;
 }
 .pipe {
     display: none;
